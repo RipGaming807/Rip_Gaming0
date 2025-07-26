@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKZ Game Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme bg-black" id="body">
+
+  <header>
+    <h1><span class="glow">⚡ SKZ Game Hub ⚡</span></h1>
+
+    <div class="controls">
+      <label for="themeToggle">🌗 Theme:</label>
+      <select id="themeToggle">
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+
+      <label for="bgSelect">🎮 Background:</label>
+      <select id="bgSelect">
+        <option value="black">Default Black</option>
+        <option value="fantasy">Fantasy World</option>
+        <option value="spooky">Spooky Forest</option>
+        <option value="urban">Urban Cosmos</option>
+        <option value="nebula">Nebula Swirl</option>
+        <option value="planet">Planet Night Sky</option>
+        <option value="clouds">Cosmic Clouds</option>
+      </select>
+    </div>
+
+    <div class="upload-panel">
+      <h3>📄 Upload Your Game Files</h3>
+      <p>Upload HTML, CSS, JS and Thumbnail image</p>
+
+      <div class="upload-box">
+        <label>📂 HTML File</label>
+        <input type="file" id="htmlFile" accept=".html" />
+
+        <label>🎨 CSS File</label>
+        <input type="file" id="cssFile" accept=".css" />
+
+        <label>🧠 JS File</label>
+        <input type="file" id="jsFile" accept=".js" />
+
+        <label>🖼️ Thumbnail</label>
+        <input type="file" id="thumbnailFile" accept="image/*" />
+
+        <button id="uploadBtn">🚀 Upload Game</button>
+      </div>
+    </div>
+  </header>
+
+ <main>
+
+  <h2>🕹️ Game Zone</h2>
+  <div id="gamesList"></div>
+</main>
+  <footer>
+    <p>© 2025 SKZ Studios | By Commander Zunair 👨‍✈️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
